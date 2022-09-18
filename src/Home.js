@@ -22,7 +22,7 @@ export default function Home({ navigation }) {
   const [email, setEmail] = useState("");
 
    useEffect(() => {
-    async function getUserInfo(){
+    async function getCurrentUser(){
       try {
         let doc = await firebase
           .firestore()
@@ -44,7 +44,7 @@ export default function Home({ navigation }) {
       Alert.alert('There is an error.', err.message)
       }
     }
-    getUserInfo();
+    getCurrentUser();
   })
 
   const handlePress = () => {
@@ -69,9 +69,9 @@ const styles = StyleSheet.create({
   button: {
     width: 150,
     padding: 5,
-    backgroundColor: '#ff9999',
+    backgroundColor: '#689F38',
     borderWidth: 2,
-    borderColor: 'white',
+    borderColor: '#689F38',
     borderRadius: 15,
     alignSelf: 'center',
   },
@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
   container: {
     height: '100%',
     width: '100%',
-    backgroundColor: '#3FC5AB',
+    backgroundColor: '#DCEDC8',
     alignItems: 'center',
     justifyContent: 'center',
   },
