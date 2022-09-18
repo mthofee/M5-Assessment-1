@@ -55,7 +55,7 @@ export default function Home({ navigation }) {
   return (
     <View style={styles.container}>
       <Text style={styles.titleText}>Dashboard</Text>
-      <Text style={styles.text}>Hi {email}</Text>
+      <Text style={styles.text}>Hi {firstname}</Text>
       <Text style={styles.text}> {lastname}</Text>
       <Text style={styles.text}> {email}</Text>
       <Text style={styles.text}> {address}</Text>
